@@ -1,0 +1,10 @@
+<allocations>  
+  <queue name="vip">
+	<minResources>10 mb,0vcores</minResources>
+	<maxResources>100 mb,0vcores</maxResources>
+	<maxRunningApps>50</maxRunningApps>
+	<maxAMShare>0.1</maxAMShare>
+	<weight>2.0</weight>
+	<schedulingPolicy>fair</schedulingPolicy>
+  </queue>
+</allocations>

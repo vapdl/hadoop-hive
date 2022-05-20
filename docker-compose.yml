@@ -29,6 +29,10 @@ services:
     container_name: yarn-resourcemanager
     environment:
       SERVICE_PRECONDITION: "namenode:9001 namenode:9870 datanode:9864"
+    volumes:
+      - ./yarn-resource-configuration/yarn-site.xml:/opt/hadoop-3.2.1/etc/hadoop/yarn-site.xml
+      - ./yarn-resource-configuration/capacity-scheduler.xml:/opt/hadoop-3.2.1/etc/hadoop/capacity-scheduler.xml
+      - ./yarn-resource-configuration/fair-scheduler.xml:/opt/hadoop-3.2.1/etc/hadoop/fair-scheduler.xml
     env_file:
       - ./hadoop.env
 
