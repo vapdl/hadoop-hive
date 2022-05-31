@@ -1,0 +1,5 @@
+com/dataartisans/WriteIntoKafka$SimpleStringSchema.class
+com/dataartisans/WriteIntoKafka$SimpleStringGenerator.class
+com/dataartisans/WriteIntoKafka.class
+com/dataartisans/ReadFromKafka.class
+com/dataartisans/ReadFromKafka$1.class

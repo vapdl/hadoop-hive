@@ -75,10 +75,89 @@ services:
       SERVICE_PRECONDITION: "namenode:9001 datanode:9864 hive-metastore-postgresql:5432"
     ports:
       - "9083:9083"
+  flink-master:
+    image: bde2020/flink-master:1.14.2-hadoop3.2
+    hostname: flink-master
+    container_name: flink-master
+    ports:
+     - "8080:8080"
+     - "8081:8081"
+    environment:
+     - INIT_DAEMON_STEP=setup_flink
+  flink-worker:
+    image: bde2020/flink-worker:1.14.2-hadoop3.2
+    hostname: flink-worker
+    container_name: flink-worker
+    environment:
+     - FLINK_MASTER_PORT_6123_TCP_ADDR=flink-master
+    depends_on:
+     - flink-master
   hive-metastore-postgresql:
     image: bde2020/hive-metastore-postgresql:2.3.0
     container_name: hive-metastore-postgresql
+  zookeeper:
+    image: 'bitnami/zookeeper:3'
+    ports:
+     - '2181:2181'
+    volumes:
+     - 'zookeeper_data:/bitnami'
+    environment:
+     - ALLOW_ANONYMOUS_LOGIN=yes
+  kafka:
+    image: 'bitnami/kafka:2'
+    ports:
+     - '9092:9092'
+    volumes:
+     - 'kafka_data:/bitnami'
+    environment:
+     - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+     - ALLOW_PLAINTEXT_LISTENER=yes
+    depends_on:
+     - zookeeper
+  nifi:
+    image: apache/nifi:latest
+    ports:
+     - 8080 # Unsecured HTTP Web Port
+    volumes:
+     - 'apache-nifi_data:/apache/nifi'
+     - ./nifi:/opt/nifi_conf
+    environment:
+     - NIFI_WEB_HTTP_PORT=8080
+     - NIFI_CLUSTER_IS_NODE=true
+     - NIFI_CLUSTER_NODE_PROTOCOL_PORT=8082
+     - NIFI_ZK_CONNECT_STRING=zookeeper:2181
+     - NIFI_ELECTION_MAX_WAIT=1 min
+     - NIFI_SENSITIVE_PROPS_KEY=victoralfonsopratodeleon
+    depends_on:
+     - zookeeper
+  hbase-master:
+    image: bde2020/hbase-master:1.0.0-hbase1.2.6
+    container_name: hbase-master
+    hostname: hbase-master
+    env_file:
+      - ./hadoop.env
+    environment:
+      SERVICE_PRECONDITION: "namenode:9001 namenode:9870 datanode:9864 zookeeper:2181"
+    ports:
+      - 16010:16010
+
+  hbase-region:
+    image: bde2020/hbase-regionserver:1.0.0-hbase1.2.6
+    container_name: hbase-regionserver
+    hostname: hbase-regionserver
+    env_file:
+      - ./hadoop.env
+    environment:
+      HBASE_CONF_hbase_regionserver_hostname: hbase-region
+      SERVICE_PRECONDITION: "namenode:9001 namenode:9870 datanode:9864 zookeeper:2181 hbase-master:16010"
+    ports:
+      - 16030:16030
 volumes:
   hadoop_namenode:
   hadoop_datanode:
   hadoop_historyserver:
+  zookeeper_data:
+  kafka_data:
+  apache-nifi_data:
+  nifi_data:
+  
