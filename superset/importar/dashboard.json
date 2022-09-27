@@ -1,0 +1,579 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "css": "",
+                "dashboard_title": "dashboard",
+                "description": null,
+                "json_metadata": "{\"show_native_filters\": true, \"color_scheme\": \"\", \"refresh_frequency\": 0, \"expanded_slices\": {}, \"label_colors\": {}, \"timed_refresh_immune_slices\": [], \"default_filters\": \"{}\", \"chart_configuration\": {}, \"native_filter_configuration\": [{\"id\": \"NATIVE_FILTER-ixUewwUH5\", \"controlValues\": {\"multiSelect\": true, \"enableEmptyFilter\": false, \"defaultToFirstItem\": false, \"inverseSelection\": false, \"searchAllOptions\": false}, \"name\": \"Pais\", \"filterType\": \"filter_select\", \"targets\": [{\"datasetId\": 1, \"column\": {\"name\": \"atlete_country\"}}], \"defaultDataMask\": {\"extraFormData\": {}, \"filterState\": {}, \"ownState\": {}}, \"cascadeParentIds\": [], \"scope\": {\"rootPath\": [\"ROOT_ID\"], \"excluded\": []}, \"type\": \"NATIVE_FILTER\", \"description\": \"\"}], \"remote_id\": 1}",
+                "position_json": "{\"CHART-5HgzoCoSjd\":{\"children\":[],\"id\":\"CHART-5HgzoCoSjd\",\"meta\":{\"chartId\":1,\"height\":50,\"sliceName\":\"Cantidad total de registros\",\"uuid\":\"3bf38d06-f929-44e6-94a0-778acf197a39\",\"width\":3},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-Mjko3YTPYp\"],\"type\":\"CHART\"},\"CHART-9mti1u8u-n\":{\"children\":[],\"id\":\"CHART-9mti1u8u-n\",\"meta\":{\"chartId\":2,\"height\":80,\"sliceName\":\"Atletas por pais\",\"uuid\":\"298dabc4-0f7b-4a51-8433-84d02f46b3c0\",\"width\":9},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-Mjko3YTPYp\"],\"type\":\"CHART\"},\"CHART-TinUIBb4S5\":{\"children\":[],\"id\":\"CHART-TinUIBb4S5\",\"meta\":{\"chartId\":3,\"height\":36,\"sliceName\":\"Pa\\u00edses mas ganadores de Carreras\",\"uuid\":\"007f2646-f989-419e-b414-0969c4985cd5\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-UbPfcxuofd\"],\"type\":\"CHART\"},\"CHART-kHAshpQiK8\":{\"children\":[],\"id\":\"CHART-kHAshpQiK8\",\"meta\":{\"chartId\":4,\"height\":65,\"sliceName\":\"Listado Carreras\",\"uuid\":\"7e843ce1-3cc3-4907-922a-c73d9573044c\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-V5ex0g44u\"],\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"ROW-Mjko3YTPYp\",\"ROW-UbPfcxuofd\",\"ROW-V5ex0g44u\"],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"dashboard\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-Mjko3YTPYp\":{\"children\":[\"CHART-5HgzoCoSjd\",\"CHART-9mti1u8u-n\"],\"id\":\"ROW-Mjko3YTPYp\",\"meta\":{\"0\":\"ROOT_ID\",\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-UbPfcxuofd\":{\"children\":[\"CHART-TinUIBb4S5\"],\"id\":\"ROW-UbPfcxuofd\",\"meta\":{\"0\":\"ROOT_ID\",\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-V5ex0g44u\":{\"children\":[\"CHART-kHAshpQiK8\"],\"id\":\"ROW-V5ex0g44u\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "default.swimrankings",
+                            "datasource_type": "table",
+                            "id": 1,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"1__table\", \"extra_form_data\": {}, \"header_font_size\": 0.4, \"metric\": \"count\", \"subheader_font_size\": 0.15, \"time_format\": \"smart_date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"big_number_total\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 1, \"datasource_name\": \"swimrankings\", \"schema\": \"default\", \"database_name\": \"Apache Hive\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"filters\":[],\"extras\":{\"time_grain_sqla\":\"P1D\",\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[],\"metrics\":[\"count\"],\"annotation_layers\":[],\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"form_data\":{\"viz_type\":\"big_number_total\",\"datasource\":\"1__table\",\"url_params\":{},\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"time_grain_sqla\":\"P1D\",\"time_range\":\"No filter\",\"metric\":\"count\",\"adhoc_filters\":[],\"header_font_size\":0.4,\"subheader_font_size\":0.15,\"y_axis_format\":\"SMART_NUMBER\",\"time_format\":\"smart_date\",\"extra_form_data\":{},\"force\":false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "Cantidad total de registros",
+                            "viz_type": "big_number_total"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "default.swimrankings",
+                            "datasource_type": "table",
+                            "id": 2,
+                            "params": "{\"adhoc_filters\": [], \"color_picker\": {\"a\": 1, \"b\": 135, \"g\": 122, \"r\": 0}, \"country_fieldtype\": \"name\", \"datasource\": \"1__table\", \"entity\": \"atlete_country\", \"extra_form_data\": {}, \"linear_color_scheme\": \"superset_seq_1\", \"max_bubble_size\": \"25\", \"metric\": \"count\", \"row_limit\": 10000, \"show_bubbles\": false, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"world_map\", \"remote_id\": 2, \"datasource_name\": \"swimrankings\", \"schema\": \"default\", \"database_name\": \"Apache Hive\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"filters\":[],\"extras\":{\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[],\"metrics\":[\"count\"],\"annotation_layers\":[],\"row_limit\":10000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"form_data\":{\"viz_type\":\"world_map\",\"datasource\":\"1__table\",\"url_params\":{},\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"time_range\":\"No filter\",\"entity\":\"atlete_country\",\"country_fieldtype\":\"name\",\"metric\":\"count\",\"adhoc_filters\":[],\"row_limit\":10000,\"show_bubbles\":false,\"max_bubble_size\":\"25\",\"color_picker\":{\"r\":0,\"g\":122,\"b\":135,\"a\":1},\"linear_color_scheme\":\"superset_seq_1\",\"extra_form_data\":{},\"force\":false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "Atletas por pais",
+                            "viz_type": "world_map"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "default.swimrankings",
+                            "datasource_type": "table",
+                            "id": 3,
+                            "params": "{\"adhoc_filters\": [{\"clause\": \"WHERE\", \"comparator\": \"1\", \"expressionType\": \"SIMPLE\", \"filterOptionName\": \"filter_72ag4is4d4g_lzi2fr8q0v\", \"isExtra\": false, \"isNew\": false, \"operator\": \"==\", \"operatorId\": \"EQUALS\", \"sqlExpression\": null, \"subject\": \"atlete_position\"}], \"bottom_margin\": \"auto\", \"color_scheme\": \"supersetColors\", \"columns\": [\"event_category\"], \"datasource\": \"1__table\", \"extra_form_data\": {}, \"groupby\": [\"atlete_country\"], \"metrics\": [{\"aggregate\": \"COUNT\", \"column\": {\"certification_details\": null, \"certified_by\": null, \"column_name\": \"atlete_position\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 11, \"is_certified\": false, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"STRING\", \"type_generic\": 1, \"verbose_name\": null, \"warning_markdown\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"COUNT(atlete_position)\", \"optionName\": \"metric_ahqvzuszhgg_iv8smjzcdo\", \"sqlExpression\": null}], \"order_desc\": true, \"rich_tooltip\": true, \"row_limit\": 10000, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_ticks_layout\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 3, \"datasource_name\": \"swimrankings\", \"schema\": \"default\", \"database_name\": \"Apache Hive\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"filters\":[{\"col\":\"atlete_position\",\"op\":\"==\",\"val\":\"1\"}],\"extras\":{\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"atlete_country\",\"event_category\"],\"metrics\":[{\"expressionType\":\"SIMPLE\",\"column\":{\"id\":11,\"column_name\":\"atlete_position\",\"verbose_name\":null,\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"is_dttm\":false,\"type\":\"STRING\",\"type_generic\":1,\"python_date_format\":null,\"is_certified\":false,\"certified_by\":null,\"certification_details\":null,\"warning_markdown\":null},\"aggregate\":\"COUNT\",\"sqlExpression\":null,\"isNew\":false,\"hasCustomLabel\":false,\"label\":\"COUNT(atlete_position)\",\"optionName\":\"metric_ahqvzuszhgg_iv8smjzcdo\"}],\"annotation_layers\":[],\"row_limit\":10000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"form_data\":{\"viz_type\":\"dist_bar\",\"datasource\":\"1__table\",\"url_params\":{},\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"time_range\":\"No filter\",\"metrics\":[{\"expressionType\":\"SIMPLE\",\"column\":{\"id\":11,\"column_name\":\"atlete_position\",\"verbose_name\":null,\"description\":null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"is_dttm\":false,\"type\":\"STRING\",\"type_generic\":1,\"python_date_format\":null,\"is_certified\":false,\"certified_by\":null,\"certification_details\":null,\"warning_markdown\":null},\"aggregate\":\"COUNT\",\"sqlExpression\":null,\"isNew\":false,\"hasCustomLabel\":false,\"label\":\"COUNT(atlete_position)\",\"optionName\":\"metric_ahqvzuszhgg_iv8smjzcdo\"}],\"adhoc_filters\":[{\"expressionType\":\"SIMPLE\",\"subject\":\"atlete_position\",\"operator\":\"==\",\"operatorId\":\"EQUALS\",\"comparator\":\"1\",\"clause\":\"WHERE\",\"sqlExpression\":null,\"isExtra\":false,\"isNew\":false,\"filterOptionName\":\"filter_72ag4is4d4g_lzi2fr8q0v\"}],\"groupby\":[\"atlete_country\"],\"columns\":[\"event_category\"],\"row_limit\":10000,\"order_desc\":true,\"color_scheme\":\"supersetColors\",\"rich_tooltip\":true,\"y_axis_format\":\"SMART_NUMBER\",\"y_axis_bounds\":[null,null],\"bottom_margin\":\"auto\",\"x_ticks_layout\":\"auto\",\"extra_form_data\":{},\"force\":false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "Pa\u00edses mas ganadores de Carreras",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "default.swimrankings",
+                            "datasource_type": "table",
+                            "id": 4,
+                            "params": "{\"adhoc_filters\": [], \"all_columns\": [\"atlete_country\", \"atlete_name\", \"atlete_age\", \"competition_name\", \"event_style\", \"event_distance\", \"event_name\", \"event_date\", \"atlete_position\", \"atlete_time\", \"atlete_fina21_points\", \"atlete_power_points\"], \"color_pn\": false, \"conditional_formatting\": [], \"datasource\": \"1__table\", \"extra_form_data\": {}, \"groupby\": [], \"include_search\": true, \"order_by_cols\": [], \"order_desc\": true, \"percent_metrics\": [], \"query_mode\": \"raw\", \"row_limit\": 10000, \"server_page_length\": 10, \"show_cell_bars\": false, \"table_timestamp_format\": \"smart_date\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"table\", \"remote_id\": 4, \"datasource_name\": \"swimrankings\", \"schema\": \"default\", \"database_name\": \"Apache Hive\"}",
+                            "query_context": "{\"datasource\":{\"id\":1,\"type\":\"table\"},\"force\":false,\"queries\":[{\"time_range\":\"No filter\",\"filters\":[],\"extras\":{\"time_grain_sqla\":\"P1D\",\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"having\":\"\",\"having_druid\":[],\"where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"atlete_country\",\"atlete_name\",\"atlete_age\",\"competition_name\",\"event_style\",\"event_distance\",\"event_name\",\"event_date\",\"atlete_position\",\"atlete_time\",\"atlete_fina21_points\",\"atlete_power_points\"],\"orderby\":[],\"annotation_layers\":[],\"row_limit\":10000,\"timeseries_limit\":0,\"order_desc\":true,\"url_params\":{},\"custom_params\":{},\"custom_form_data\":{},\"post_processing\":[]}],\"form_data\":{\"viz_type\":\"table\",\"datasource\":\"1__table\",\"url_params\":{},\"time_range_endpoints\":[\"inclusive\",\"exclusive\"],\"time_grain_sqla\":\"P1D\",\"time_range\":\"No filter\",\"query_mode\":\"raw\",\"groupby\":[],\"all_columns\":[\"atlete_country\",\"atlete_name\",\"atlete_age\",\"competition_name\",\"event_style\",\"event_distance\",\"event_name\",\"event_date\",\"atlete_position\",\"atlete_time\",\"atlete_fina21_points\",\"atlete_power_points\"],\"percent_metrics\":[],\"adhoc_filters\":[],\"order_by_cols\":[],\"row_limit\":10000,\"server_page_length\":10,\"include_time\":false,\"order_desc\":true,\"table_timestamp_format\":\"smart_date\",\"include_search\":true,\"show_cell_bars\":false,\"color_pn\":false,\"conditional_formatting\":[],\"extra_form_data\":{},\"force\":false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\":\"json\",\"result_type\":\"full\"}",
+                            "slice_name": "Listado Carreras",
+                            "viz_type": "table"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "id",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 1,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INT",
+                            "uuid": "e21862fb-8a0e-41a4-9802-313584ec3e58",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "competition_date",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 2,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "b95be26e-c460-4360-a51c-4d3f413ce725",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "competition_city",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 3,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "50a464e8-8385-4410-8696-991d895cbb89",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "competition_name",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 4,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "7db9c3f6-6535-4f64-a016-1f81e6bc36a7",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "event_category",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 5,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "1c4de494-f596-4423-82db-6a69678d4e51",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "event_style",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 6,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "1ed670fa-8611-4f40-a1c9-719b55b05dbc",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "event_distance",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 7,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INT",
+                            "uuid": "08933402-38c1-43f6-9b64-7787d274d70e",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "event_distance_measure",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 8,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "8fee3476-1e8f-4e0c-8a07-709718b036f0",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "event_name",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 9,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "4a64eb7f-ba37-40b1-bb3f-18dc17d7b53c",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "event_date",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 10,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "e7ec918c-56cf-4175-9217-55004c333904",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "atlete_position",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 11,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "df09dddf-dbcf-4c83-b70b-782b63231a7f",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "atlete_name",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 12,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "12ca0441-fc12-470d-99fa-59083c8ef0c2",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "atlete_yob",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 13,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INT",
+                            "uuid": "1d2eceb7-01e4-4f14-8e72-fda5141062cf",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "atlete_age",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 14,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INT",
+                            "uuid": "4dd8a114-20ec-4334-b0f4-ee83999d9ceb",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "atlete_country",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 15,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "f040c9aa-e703-463e-aab7-35041f797631",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "atlete_time",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 16,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "9ee79ca7-1a5f-4a99-a686-d415bfea3206",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "atlete_fina21_points",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 17,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INT",
+                            "uuid": "db800406-e9dc-4d01-96c4-6ee9fe74068f",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "column_name": "atlete_power_points",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "extra": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 18,
+                            "is_active": true,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INT",
+                            "uuid": "b07e26ce-23d7-4cb7-9946-fadec08e64f4",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "database_id": 1,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": null,
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2022-09-27T02:58:31"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "extra": null,
+                            "id": 1,
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "table_id": 1,
+                            "uuid": "f7746e30-fd68-4e04-b926-95ba41aae6b1",
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 1, \"database_name\": \"Apache Hive\"}",
+                "schema": "default",
+                "sql": null,
+                "table_name": "swimrankings",
+                "template_params": null
+            }
+        }
+    ]
+}
