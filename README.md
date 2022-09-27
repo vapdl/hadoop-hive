@@ -43,3 +43,5 @@ TBLPROPERTIES ("skip.header.line.count"="1");
 
 6.- Dentro de superset agregar Hive como base de datos. Uri de conexion: "hive://hive@hive-server:10000/default"
 
+7.- Importar dataset y dashboard que estan en el directorio "superset/importar"
+
