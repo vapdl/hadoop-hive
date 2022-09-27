@@ -30,7 +30,7 @@ stored as textfile
 location 'hdfs://namenode:9001/home/datalake/swimrankings'
 TBLPROPERTIES ("skip.header.line.count"="1");
 
-4.- Conectarse al contenedor de Hive y ejecutar los siguientes comandos:
+4.- Conectarse al contenedor de Superset y ejecutar los siguientes comandos:
       	superset superset fab create-admin \
               --username admin \
               --firstname Superset \
