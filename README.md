@@ -39,7 +39,7 @@ TBLPROPERTIES ("skip.header.line.count"="1");
        
        superset superset init
        
-5.- Logearse en superset navegando a http://localhost:8080/login/ -- u/p: [admin/admin]
+5.- Logearse en superset navegando a http://localhost:8088/login/ -- u/p: [admin/admin]
 
 6.- Dentro de superset agregar Hive como base de datos. Uri de conexion: "hive://hive@hive-server:10000/default"
 
