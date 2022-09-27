@@ -1,4 +1,0 @@
-1,Victor Prato,100
-2,Maria Torres,100
-3,Juan Contreras,200
-4,Antonia Hidalgo,300
